@@ -1,0 +1,50 @@
+{
+    "name": "asciito/browser",
+    "description": "",
+    "authors": [
+        {
+            "name": "Ayax Cordova",
+            "email": "hcordova@supernus.com"
+        }
+    ],
+    "keywords": [
+        "laravel",
+        "browser",
+        "automatation",
+        "scrap"
+    ],
+    "require": {
+        "php-webdriver/webdriver": "^1.15.0",
+        "asciito/laravel-package": "^0.2.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.11",
+        "pestphp/pest": "^2.19",
+        "pestphp/pest-plugin-laravel": "^2.2",
+        "pestphp/pest-plugin-drift": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Asciito\\Browser\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Asciito\\Browser\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Asciito\\Browser\\BrowserServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "version": "v0.1.0"
+}
