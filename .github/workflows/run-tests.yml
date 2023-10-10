@@ -22,7 +22,6 @@ jobs:
         with:
           php-version: ${{ matrix.php }}
           extensions: mbstring, zip, fileinfo, filter, pdo, pdo_sqlite, ctype, curl, dom, hash, openssl, pcre, session, tokenizer, xml
-          tools: composer
 
       - name: Install Dependencies
         run: composer install --no-progress --no-interaction --prefer-source
