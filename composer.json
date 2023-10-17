@@ -15,7 +15,7 @@
     ],
     "require": {
         "php-webdriver/webdriver": "^1.15.0",
-        "asciito/laravel-package": "^0.2.0"
+        "asciito/laravel-package": "^0.4.1"
     },
     "require-dev": {
         "orchestra/testbench": "^8.11",
